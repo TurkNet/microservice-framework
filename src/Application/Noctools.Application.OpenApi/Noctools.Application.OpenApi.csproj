@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <Authors>Noctools Engineering Team</Authors>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>1.0.2</PackageVersion>
+        <Version>1.0.2</Version>
+        <AssemblyVersion>1.0.2</AssemblyVersion>
+        <FileVersion>1.0.2</FileVersion>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="4.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="4.0.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="4.0.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="3.1.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="3.1.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Infrastructure\Noctools.Infrastructure\Noctools.Infrastructure.csproj" />
+        <ProjectReference Include="..\..\Noctools.Utils\Noctools.Utils.csproj" />
+        <ProjectReference Include="..\Noctools.Application\Noctools.Application.csproj" />
+    </ItemGroup>
+</Project>

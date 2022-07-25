@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <Authors>Noctools Engineering Team</Authors>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>1.0.2</PackageVersion>
+        <Version>1.0.2</Version>
+        <AssemblyVersion>1.0.2</AssemblyVersion>
+        <FileVersion>1.0.2</FileVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="8.0.0" />
+        <PackageReference Include="MediatR" Version="6.0.0" />
+        <PackageReference Include="FluentValidation" Version="8.4.0" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="6.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.ResponseCaching" Version="2.2.0" />
+        <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="2.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Domain\Noctools.Domain\Noctools.Domain.csproj" />
+        <ProjectReference Include="..\..\Noctools.Utils\Noctools.Utils.csproj" />
+    </ItemGroup>
+</Project>

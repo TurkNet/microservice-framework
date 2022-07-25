@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <Authors>Noctools Engineering Team</Authors>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>1.0.1</PackageVersion>
+        <Version>1.0.1</Version>
+        <AssemblyVersion>1.0.1</AssemblyVersion>
+        <FileVersion>1.0.1</FileVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="8.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+        <PackageReference Include="System.Reactive" Version="4.2.0" />
+        <PackageReference Include="MediatR" Version="6.0.0" />
+        <PackageReference Include="Google.Protobuf" Version="3.6.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\Domain\Noctools.Domain\Noctools.Domain.csproj" />
+        <ProjectReference Include="..\..\Noctools.Infrastructure\Noctools.Infrastructure.csproj" />
+    </ItemGroup>
+</Project>
